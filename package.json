@@ -2,20 +2,23 @@
   "name": "revision",
   "version": "1.0.1",
   "description": "A brand new way to bypass censorship using a dynamic PORT system",
-  "main": "./source/server.js",
+  "main": "proxy.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/transicle/Revision.git"
+    "url": "git+https://github.com/eliglancy/Revision.git"
   },
-  "author": "transicle",
+  "author": "eliglancy",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/transicle/Revision/issues"
+  "scripts": {
+    "start": "node proxy.js",
+    "dev": "nodemon proxy.js"
   },
-  "homepage": "https://github.com/transicle/Revision#readme",
   "dependencies": {
-    "fs": "^0.0.1-security",
-    "pnpm": "^10.15.1"
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   },
   "module": "commonjs"
 }
